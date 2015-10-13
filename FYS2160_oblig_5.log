@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.21)  9 OCT 2015 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.21)  12 OCT 2015 09:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,23 +565,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: task_a_illustration.pdf Graphic file (type pdf)
 
 <use task_a_illustration.pdf>
-Package pdftex.def Info: task_a_illustration.pdf used on input line 90.
+Package pdftex.def Info: task_a_illustration.pdf used on input line 94.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./t
 ask_a_illustration.pdf>] [3] [4] [5] [6]
-
+[7] [8] 
 AED: lastpage setting LastPage
 (./FYS2160_oblig_5.aux) ) 
 Here is how much of TeX's memory you used:
- 6435 strings out of 493089
- 92974 string characters out of 6134842
- 172301 words of memory out of 5000000
- 9808 multiletter control sequences out of 15000+600000
+ 6437 strings out of 493089
+ 93024 string characters out of 6134842
+ 172317 words of memory out of 5000000
+ 9810 multiletter control sequences out of 15000+600000
  13586 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,38p,673b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,38p,673b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
@@ -595,10 +595,10 @@ cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on FYS2160_oblig_5.pdf (6 pages, 166083 bytes).
+Output written on FYS2160_oblig_5.pdf (8 pages, 181446 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  12 words of extra memory for PDF output out of 10000 (max. 10000000)
 

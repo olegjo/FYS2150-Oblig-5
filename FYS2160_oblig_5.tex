@@ -59,6 +59,10 @@
 
 \maketitle
 \noindent
+
+\begin{center}
+ \textbf{I would like feedback on this oblig.\\}
+\end{center}
 \begin{exercise}
 	\begin{itemize}
 		\item[a)]
@@ -195,17 +199,17 @@
 			 \end{align}
 			 So the partition function is
 			 \begin{align}
-			 	Z_{1,3D} 	&= \sum_{\mathrm{all~states}} e^{\varepsilon_{3D}/kT} \nonumber \\
-			 		&= \sum_{n_x=0}^\infty \sum_{n_y=0}^{\infty} e^{an_x^2/kT}e^{an_y^2/kT}e^{\varepsilon_{z0}/kT} \nonumber \\
-			 		&= \sum_{n_x=0}^\infty e^{an_x^2/kT} \sum_{n_y=0}^{\infty} e^{an_y^2/kT} e^{\varepsilon_{z0}/kT} \nonumber \\
-			 		&= Z_{1,2D} e^{\varepsilon_{z0}\beta} \nonumber
+			 	Z_{1,3D} 	&= \sum_{\mathrm{all~states}} e^{-\varepsilon_{3D}/kT} \nonumber \\
+			 		&= \sum_{n_x=0}^\infty \sum_{n_y=0}^{\infty} e^{-an_x^2/kT}e^{-an_y^2/kT}e^{-\varepsilon_{z0}/kT} \nonumber \\
+			 		&= \sum_{n_x=0}^\infty e^{-an_x^2/kT} \sum_{n_y=0}^{\infty} e^{-an_y^2/kT} e^{-\varepsilon_{z0}/kT} \nonumber \\
+			 		&= Z_{1,2D} e^{-\varepsilon_{z0}\beta} \nonumber
 			 \end{align}
 			 where $Z_{1,2D}$ is the partition function for one particle the two dimensional case in eq.~\ref{eq: part.func. 2D one particle} and $\varepsilon_{z0}$ is the energy for the ground state for for motion in the $z$-direction.
 			 For $N$ particles:
 			 \begin{align}
 			 	Z 	&= \frac{1}{N!}Z_{1,3D}^N \nonumber \\
-			 		&= \frac{1}{N!}Z_{1,2D}^N e^{N\varepsilon_{z0}\beta} \nonumber \\
-			 		&= Z_{N,2D} e^{N\varepsilon_{z0}\beta} \nonumber
+			 		&= \frac{1}{N!}Z_{1,2D}^N e^{-N\varepsilon_{z0}\beta} \nonumber \\
+			 		&= Z_{N,2D} e^{-N\varepsilon_{z0}\beta} \nonumber
 			 \end{align}
 			 where again, $Z_{N,2D}$ is the partition function for $N$ particles in the two dimensional case in eq.~\ref{eq: part.func. 2D}. 
 			
@@ -214,14 +218,109 @@
 			Using the above expression for the partition function in three dimensions, the energy can be calculated as
 			\begin{align}
 				U 	&= -\frac{1}{Z}\frac{\partial Z}{\partial \beta} \nonumber \\
-					&= -\frac{1}{Z}\frac{\partial}{\partial \beta} \left( Z_{N,2D} e^{N\varepsilon_{z0}\beta} \right) \nonumber \\
-					&= -\frac{1}{Z}\left[ e^{N\varepsilon_{z0}\beta} \frac{\partial}{\partial \beta} Z_{N,2D} + Z_{N,2D}\frac{\partial}{\partial \beta}e^{N\varepsilon_{z0}\beta} \right] \nonumber \\
-					&= -\frac{1}{Z} \left[ e^{N\varepsilon_{z0}\beta} \left( -U_{2D} Z_{N,2D} \right) + Z_{N,2D} N \varepsilon_{z0} e^{N\varepsilon_{z0}\beta} \right] \nonumber \\
-					&= -\frac{1}{Z_{N,2D} e^{N\varepsilon_{z0}\beta}} Z_{N,2D} e^{N\varepsilon_{z0}\beta} \left( N \varepsilon_{z0} -U_{2D} \right) \nonumber \\
-					&= U_{2D} -  N \varepsilon_{z0} \nonumber  \\
-					&= NkT - N \varepsilon_{z0} \nonumber
+					&= -\frac{1}{Z}\frac{\partial}{\partial \beta} \left( Z_{N,2D} e^{-N\varepsilon_{z0}\beta} \right) \nonumber \\
+					&= -\frac{1}{Z}\left[ e^{-N\varepsilon_{z0}\beta} \frac{\partial}{\partial \beta} Z_{N,2D} + Z_{N,2D}\frac{\partial}{\partial \beta}e^{-N\varepsilon_{z0}\beta} \right] \nonumber \\
+					&= -\frac{1}{Z} \left[ e^{-N\varepsilon_{z0}\beta} \left( -U_{2D} Z_{N,2D} \right) - Z_{N,2D} N \varepsilon_{z0} e^{-N\varepsilon_{z0}\beta} \right] \nonumber \\
+					&= -\frac{1}{Z_{N,2D} e^{-N\varepsilon_{z0}\beta}} Z_{N,2D} e^{-N\varepsilon_{z0}\beta} \left( -N \varepsilon_{z0} -U_{2D} \right) \nonumber \\
+					&= U_{2D} +  N \varepsilon_{z0} \nonumber  \\
+					&= NkT + N \varepsilon_{z0} \nonumber
 			\end{align}
 			
+			
+			
+	\end{itemize}
+\end{exercise}
+
+
+\begin{exercise}
+	\begin{itemize}
+		\item[a)]
+			The gas is taken into the engine before 1 in the figure. In a single cycle, the gas is first compressed adiabatically from $1\rightarrow 2$, implying no change in entropy. The same applies for the processes in $3\rightarrow 4$. In $2\rightarrow 3$ and $4\rightarrow 1$, however, the processes are not adiabatic, so the entropy changes. The question is, then, by how much?
+
+			The PV-diagram shows the gas which is in the chamber at all times. Since processes are assumed to be reversible, it doesn't matter if we start to study the cycle after 1 cycle or 20 000 cycles. The entropy of the system must therefore be the same at 1, no matter where we start looking at it, and so $\Delta S_{23} = -\Delta S_{41}$, and for the whole cycle $\Delta S = \Delta S_{23} + \Delta S_{41} = 0$.			
+		
+		
+		\item[b)]
+			The entropy of an ideal gas is given by the Sackur-Tetrode equation:
+			\begin{align*}
+				S = Nk\left[ \ln \left( \frac{V_2}{N} \left( \frac{4\pi mk T}{h^2} \right) ^{3/2} \right) + \frac{5}{2} \right]
+			\end{align*}
+			The change in entropy between the initial state $s_i=s(V_i, T_i)$ and the final state $s_f=s(V_f, T_f)$ is then
+			\begin{align}
+				\Delta S_{s_i s_f} = S_{s_f} - S_{s_i} = Nk\ln \left( \frac{V_f T_f^{3/2}}{V_i T_i^{3/2}} \right) \label{delta S si sf}
+			\end{align}
+			Using that in $2\rightarrow 3$, the pressure in the gas, can be written as
+			\begin{align*}
+				\frac{NkT_2}{V_2} = P_2 = P_3 = \frac{NkT_3}{V_3}
+			\end{align*}
+			we find that the change in entropy is
+			\begin{align*}
+				\Delta S_{23} = Nk\ln \left( \frac{V_3 T_3^{3/2}}{V_2T_2^{3/2}} \right) = Nk\ln \left( \frac{T_3V_2 T_3^{3/2}}{T_2 T_2^{3/2}} \right)  = \frac{5}{2}Nk\ln\frac{T_3}{T_2} = C_P\ln \frac{T_3}{T_2}
+			\end{align*}
+			where $C_P = \frac{5}{2}Nk$.
+		
+		\item[c)]
+			Since there is no work done on the system for the case $4\rightarrow 1$, we can use the definition of heat capacity of constant volume:
+			\begin{align}
+				C_V = \frac{\partial Q}{\partial T} \Rightarrow dQ = C_V dT \label{eq: heat capacity constant volume}
+			\end{align}
+			and the definition of temperature to calculate the change in entropy. The definition of temperature is
+			\begin{align*}
+				ds = \frac{dQ}{T} \Rightarrow \Delta S_{T_i, T_f} &= \int_{T_i}^{T_f} \frac{dQ}{T} = C_V \int_{T_i}^{T_f} \frac{dT}{T} \\
+				\Rightarrow \Delta S_{41} = C_V \int_{T_4}^{T_1} \frac{dT}{T} = C_V \ln \frac{T_1}{T_4}
+			\end{align*}
+		
+		
+		\item[d)]
+			Using the above expressions for $\Delta S_{23}$ and $\Delta S_{41}$:
+			\begin{align*}
+				\frac{\Delta S_{23}}{\Delta S_{41}} &= \frac{C_P}{C_V}\frac{\ln(T_3/T_2)}{\ln(T_1/T_4)} \\
+				\Rightarrow \left( \frac{T_1}{T_4} \right)^{\frac{\Delta S_{23}}{\Delta S_{41}}} &= \left( \frac{T_3}{T_2} \right) ^\gamma \\
+				\Rightarrow T_1^\frac{\Delta S_{23}}{\Delta S_{41}}T_2^\gamma &= T_3^\gamma T_4^\frac{\Delta S_{23}}{\Delta S_{41}}
+			\end{align*}
+			where $\gamma = C_P/C_V$. Using the result from a), we find that $\frac{\Delta S_{23}}{\Delta S_{41}}=-1$ and the above expression is the desired one.
+		
+		
+		\item[e)]
+			The average thermal energy of the ideal gas is $Q=\frac{3}{2}NkT$. This is at constant volume. Following the definition of heat capacity, the heat capacity at constant volume is the temperature derivative of the thermal energy, and so $C_V = \frac{3}{2}Nk$, or
+			\begin{align*}
+				\gamma = \frac{C_P}{C_V} = \frac{5}{3}
+			\end{align*}
+			
+			Using eq.~\eqref{delta S si sf}, we then find that the change in entropy between state 1 and state 2 is
+			\begin{align*}
+				\Delta S_{12} = Nk\ln \left( \frac{V_2T_2^{3/2}}{V_1T_1^{3/2}} \right)
+			\end{align*}
+			Since the process is adiabatic, $\Delta S_{12} = 0$, and so we find
+			\begin{align*}
+				V_1T_1^{3/2} = V_2T_2^{3/2} \Rightarrow V_1^{2/3}T_1 &= V_2^{2/3}T_2 \\
+				V_1^{\gamma-1}T_1 &= V_2^{\gamma-1}T_2
+			\end{align*}
+			And very similar for the process $3\rightarrow 4$, we find
+			\begin{align*}
+				V_3^{\gamma - 1}T_3 = V_1^{\gamma-1}T_4
+			\end{align*}
+			
+		
+		\item[f)]
+			Using eq.~\eqref{eq: heat capacity constant volume} we find that 
+			\begin{align*}
+				Q_{41} = C_V\int_{T_4}^{T_1} dT = C_V(T_1 - T_4)
+			\end{align*}
+			The definition of heat capacity of constant pressure is exactly equal to that in eq.~\eqref{eq: heat capacity constant volume}, so we get, again
+			\begin{align*}
+				Q_{23} = C_P \int_{T_2}^{T_3} dT = C_P(T_3-T_2)
+			\end{align*}
+		
+		\item[g)]
+			The ideal efficiency is 
+			\begin{align*}
+				e = 1 - \frac{Q_{\mathrm{in}}}{Q_{\mathrm{out}}}
+			\end{align*}
+			where, in this case, heat is added when the fuel is ignited in $2\rightarrow 3$ and heat is taken out in $4\rightarrow 1$. Therefore, the ideal efficiency is
+			\begin{align*}
+				e = 1-\frac{-C_V(T_1 - T_4)}{C_P(T_3-T_2)} = 1-\frac{C_V(T_4 - T_1)}{C_P(T_3-T_2)}
+			\end{align*}
 			
 			
 	\end{itemize}
